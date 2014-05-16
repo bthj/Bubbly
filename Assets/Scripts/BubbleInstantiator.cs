@@ -24,7 +24,7 @@ public class BubbleInstantiator : MonoBehaviour {
 	
 		SpawnNewNounBubble();
 
-		Physics.gravity = new Vector3(0, -0.8F, 0);
+		Physics.gravity = new Vector3(0, -1F, 0);
 	}
 	
 	// Update is called once per frame
@@ -44,12 +44,19 @@ public class BubbleInstantiator : MonoBehaviour {
 				Instantiate( someRandomChipPrefab, transform.position, transform.rotation ) as GameObject;
 
 			Transform bubbleInstance = Instantiate( bubblePrefab, transform.position, transform.rotation) as Transform;
-			
+			bubbleInstance.position = Vector3.zero;
+			//bubbleInstance.localPosition
+
+
 			someRandomChipInstance.transform.parent = bubbleInstance;
-			someRandomChipInstance.transform.position = bubbleInstance.transform.position;
+			// someRandomChipInstance.transform.localPosition = Vector3.zero;
+			//someRandomChipInstance.transform.position = bubbleInstance.position;
+
+			//Debug.Log( "parent pos: " + bubbleInstance.localPosition );
+			//Debug.Log( "child pos: " + someRandomChipInstance.transform.localPosition );
 			
 			// for some reason the chips are upside down, let's rotate
-			someRandomChipInstance.transform.Rotate( new Vector3(180, 180, 0) );
+			//someRandomChipInstance.transform.Rotate( new Vector3(180, 180, 0) );
 			
 			ScaleObjectToBeWithinItsParent( someRandomChipInstance );
 
@@ -79,6 +86,8 @@ public class BubbleInstantiator : MonoBehaviour {
 		if( objectList.Count > 0 ) {
 
 			int listIndex = Random.Range(0, objectList.Count);
+			//int listIndex = objectList.Count-1;
+			//int listIndex = 0;
 			
 			objectToRemove = objectList[listIndex];
 			objectList.RemoveAt( listIndex );

@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 400000}
   - 54: {fileID: 5400000}
   m_Layer: 0
-  m_Name: ChipContainer
-  m_TagString: Untagged
+  m_Name: Bird
+  m_TagString: indefiniteA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0556819439, y: .307650924, z: 0}
+  m_LocalPosition: {x: .0732324123, y: .307650805, z: 0}
   m_LocalScale: {x: .011624706, y: .0116247134, z: .0116247032}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -101,8 +101,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .15135932, y: .256471634, z: 0}
-  m_LocalScale: {x: .207480863, y: .116882749, z: .0299649257}
+  m_LocalPosition: {x: .178781986, y: .256471634, z: 0}
+  m_LocalScale: {x: .208220392, y: .116882749, z: .0299649257}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!4 &400006
@@ -112,8 +112,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .606316924, y: .485923171, z: .0306897499}
+  m_LocalPosition: {x: -.00245940685, y: -.0442700386, z: 0}
+  m_LocalScale: {x: .682106555, y: .485923171, z: .0306897499}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!23 &2300000
@@ -170,7 +170,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 929ed15a893284a8eb7d00aa353e291d, type: 2}
+  - {fileID: 2100000, guid: 329110019cb9f4ef3b2f64e3138c32af, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -241,7 +241,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Text: Dog
+  m_Text: Bird
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
